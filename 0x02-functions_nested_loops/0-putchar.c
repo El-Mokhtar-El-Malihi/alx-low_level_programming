@@ -1,10 +1,21 @@
-// main.h
+#include <stdio.h>
+#include "main.h"
 
-#ifndef MAIN_H
-#define MAIN_H
+int main() {
+	    _putchar('_');
+	        _putchar('p');
+		    _putchar('u');
+		        _putchar('t');
+			    _putchar('c');
+			        _putchar('h');
+				    _putchar('a');
+				        _putchar('r');
+					    _putchar('\n');
 
-int _putchar(char c);
-int myFunction(); // Replace "myFunction" with the actual function name(s) you have in your program
+					        return 0;
+}
 
-#endif /* MAIN_H */
+int _putchar(char c) {
+	    return putchar(c);
+}
 
