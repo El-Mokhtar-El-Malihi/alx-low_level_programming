@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * get_endianness - checks the endianness
  *
@@ -7,18 +6,11 @@
  */
 int get_endianness(void)
 {
-    // Create an integer with the value 1
-    int num = 1;
+	int i;
+	char *c;
 
-    // Get the first byte of the integer using bitwise AND with 0xFF
-    // This will give us the least significant byte
-    char *ptr = (char *)&num;
+	i = 1;
+	c = (char *)&i;
 
-    // Check if the value of the least significant byte is 1
-    // If it is 1, the system is little endian, otherwise, it is big endian
-    if (*ptr == 1)
-        return 1; // Little endian
-    else
-        return 0; // Big endian
+	return (*c);
 }
-
